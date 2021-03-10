@@ -5,7 +5,10 @@ class CustomButton extends Component {
   render() {
     return (
       <div
-        className="bg-blue border-radius-s fs-r pl-m pr-m pt-s pb-s text-white ml-m cursor-hand"
+        className={
+          "border-radius-s fs-r pl-m pr-m pt-s pb-s text-white ml-m cursor-hand " +
+          this.props.className
+        }
         onClick={() => {
           if (this.props.handler !== null && this.props.handler !== undefined) {
             this.props.handler();

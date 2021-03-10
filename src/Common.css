@@ -21,11 +21,7 @@
 }
 
 .popup-window {
-  width: 90%;
-  max-width: 550px;
-  max-height: 90%;
-  padding: 30px;
-  padding-bottom: 40px;
+  padding: 20px;
   border-radius: 4px;
   position: absolute;
   background-color: white;
