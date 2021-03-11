@@ -7,8 +7,12 @@ class NavBar extends Component {
   render() {
     return (
       <div className="row justify-content-between align-items-center pl-m pr-m pt-m">
-        <img style={{ height: 30 }} src={deskera_logo} alt="" />
-
+        <div>
+          <div className="row">
+            <img style={{ height: 30 }} src={deskera_logo} alt="" />
+            <div className="fw-b ml-m fs-l mt-m">Notes</div>
+          </div>
+        </div>
         <div>
           <div className="row">
             <CustomButton
