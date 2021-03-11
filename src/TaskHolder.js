@@ -83,7 +83,9 @@ class TaskHolder extends Component {
           selected={task.selected}
           handler={() => this.checkBoxClicked(index)}
         />
-        {task.title}
+        <div className={task.selected ? "text-line-through text-gray" : ""}>
+          {task.title}
+        </div>
       </div>
     );
   }
