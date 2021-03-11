@@ -22,7 +22,12 @@ class CheckBox extends Component {
         onClick={() => this.props.handler()}
       >
         {this.state.selected && (
-          <img className="parent-width" style={{}} src={ic_check_mark} alt="" />
+          <img
+            className="parent-width"
+            style={{ opacity: 0.6 }}
+            src={ic_check_mark}
+            alt=""
+          />
         )}
       </div>
     );

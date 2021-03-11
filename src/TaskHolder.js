@@ -93,7 +93,7 @@ class TaskHolder extends Component {
     let arr = this.state.tasks;
     let task = arr[index];
     task.selected = !task.selected;
-    arr.splice(index, 1, task);
+    // arr.splice(index, 1, task);
     this.setState({
       tasks: arr,
     });
