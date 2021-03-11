@@ -6,7 +6,7 @@ class CustomButton extends Component {
     return (
       <div
         className={
-          "border-radius-s fs-r pl-m pr-m pt-s pb-s text-white ml-m cursor-hand " +
+          "border-radius-s fs-r pl-r pr-r pt-s pb-s text-white cursor-hand " +
           this.props.className
         }
         onClick={() => {

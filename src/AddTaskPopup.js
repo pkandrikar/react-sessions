@@ -23,17 +23,17 @@ class AddTaskPopup extends Component {
               this.taskTitleChanged(e);
             }}
           />
-          <div className="row-reverse mt-m">
+          <div className="row-reverse mt-l">
             <CustomButton
               title="Save"
-              className="bg-blue"
+              className="bg-blue ml-r"
               handler={() => {
                 this.props.onTaskSave(this.state.taskTitle);
               }}
             />
             <CustomButton
               title="Cancel"
-              className="bg-gray5"
+              className="bg-gray3 text-black"
               handler={() => {
                 this.props.onCancel();
               }}

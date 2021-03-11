@@ -1,18 +1,36 @@
 import React, { Component } from "react";
 import CustomButton from "./CustomButton";
 import "./Common.css";
+import deskera_logo from "./assets/deskera_logo/deskera-logo-dark@2x.png";
 
 class NavBar extends Component {
   render() {
     return (
-      <div className="row justify-content-between pl-m pr-m pt-m">
-        <div>Deskera Menu</div>
+      <div className="row justify-content-between align-items-center pl-m pr-m pt-m">
+        <img style={{ height: 30 }} src={deskera_logo} alt="" />
+
         <div>
           <div className="row">
-            <CustomButton title="About" handler={this.aboutClicked} />
-            <CustomButton title="Home" handler={this.homeClicked} />
-            <CustomButton title="Contact" handler={this.contactClicked} />
-            <CustomButton title="Export" handler={this.exportClicked} />
+            <CustomButton
+              title="Home"
+              className=" text-black fw-m"
+              handler={this.homeClicked}
+            />
+            <CustomButton
+              title="About"
+              className=" text-black fw-m"
+              handler={this.aboutClicked}
+            />
+            <CustomButton
+              title="Contact"
+              className=" text-black fw-m"
+              handler={this.contactClicked}
+            />
+            <CustomButton
+              title="Settings"
+              className=" text-black fw-m"
+              handler={this.exportClicked}
+            />
           </div>
         </div>
       </div>
