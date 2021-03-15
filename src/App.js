@@ -1,23 +1,21 @@
 import "./App.css";
 import NavBar from "./NavBar";
-import TaskHolder from "./TaskHolder";
-import FolderHolder from "./FolderHolder";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import MainHolder from "./MainHolder";
+import AddTaskPopup from "./AddTaskPopup";
 
 function App() {
   return (
     <div className="main-holder bg-gray3 ">
       <NavBar />
-      <div className="column parent-width parent-height align-items-center justify-content-center ">
-        <div>
-          <div
-            className="row shadow-m border-radius-m border-m bg-white"
-            style={{ overflow: "hidden" }}
-          >
-            <FolderHolder />
-            <TaskHolder />
-          </div>
-        </div>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/" />
+          <Route exact path="/dashboard" component={MainHolder} />
+          <Route path="/dashboard/add-task" component={AddTaskPopup} />
+        </Switch>
+      </Router>
     </div>
   );
 }
